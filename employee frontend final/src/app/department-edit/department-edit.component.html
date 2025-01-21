@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Edit Department</h2>
+    <form (ngSubmit)="updateDepartment()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="department.name" name="name" required>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Update</button>
+      <button type="button" class="btn btn-secondary" (click)="navigateToDepartmentList()">Cancel</button>    </form>
+  </div>
