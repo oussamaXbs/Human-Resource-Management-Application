@@ -1,103 +1,64 @@
 
 <body>
-
   <ngb-carousel>
-      <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-              <img style="width: 100vw;     height: 610px;" src="../assets/2.jpg" alt="Random first slide" />
-          </div>
-          <div class="carousel-caption">
-              <h1 id="p1">Inspiring leadership innovation.</h1>
-              <p>Employee Management System</p>
-          </div>
-      </ng-template>
-      <ng-template ngbSlide>
-          <div class="picsum-img-wrapper">
-              <img style="width: 100vw;     height: 610px;" src="../assets/1.jpg" alt="Random second slide" />
-          </div>
-          <div class="carousel-caption">
-              <h3  id="p1">Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-      </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img style="width: 100vw; height: 610px;" src="../assets/2.jpg" alt="Random first slide" />
+      </div>
+      <div class="carousel-caption">
+        <h1 class="slide-title">Angular Framework</h1>
+        <p class="slide-description">Powerful frontend framework for modern web applications</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img style="width: 100vw; height: 610px;" src="../assets/1.jpg" alt="Random second slide" />
+      </div>
+      <div class="carousel-caption">
+        <h1 class="slide-title">Spring Boot</h1>
+        <p class="slide-description">Robust backend framework for enterprise-grade applications</p>
+      </div>
+    </ng-template>
   </ngb-carousel>
-   
-    
-  
-          <!-- Skills -->
-          <section id="skills" class="section-2 odd highlights image-right counter skills featured">
-              <br><br>
-                  <div class="divMain container">
-                      <div class="container c1 text">
-                          <h1 class="text"> Techknowlogy Stack Used:</h1>
-                          <br>
-                          <ul class="category" id="t1">
-                              <li>Backend Techknowlogy
-                                <ul class="subcategory">
-                                  <li>Java</li>
-                                  <li>Spring Boot</li>
-                                </ul>
-                              </li>
-                              <li>Frontend Techknowlogy
-                                <ul class="subcategory">
-                                  <li>Angular</li>
-                                </ul>
-                              </li>
-                              <li>Database Techknowlogy
-                                <ul class="subcategory">
-                                  <li>MySQL</li>
-                                </ul>
-                              </li>
-                            </ul>
-                            
-                           
-                      </div>
-                      <div class=" image">
-                          <img src="../assets/about-5.webp" class="fit-image" alt="Fit Image">
-                      </div>
-                  </div>
-                  <br><br>
-          </section>
-          <section class="about ">
-            <br><br>
-            <div class="container">
-        <div class="about-section">
-            <h1>About Us</h1>
-            <br>
-            <!-- <p>Some text about who we are and what we do.</p> -->
-            <p>We are two passionate developers who collaborated to create a comprehensive Human Resources Management System. Our platform simplifies HR processes, streamlines employee management, and enhances organizational efficiency. Built with innovation and user-friendliness in mind, our goal is to empower businesses with tools for seamless workforce management.</p>
+
+  <!-- Skills Section -->
+  <section class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Technology Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-angular fa-3x text-danger"></i>
           </div>
-          <br><br>
-          <h2 style="text-align:center">Our Team</h2>
-          <br><br>
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="../assets/team1.jpg" alt="Jane" style="width:350px; height:350px;">
-                <div class="container">
-                  <h2>Amine Dridi</h2>
-                  <p class="title">Backend Developper</p>
-                  <p>IT student at ISETB</p>
-                  <p>moh.amine.dridi&#64;gmail.com</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <img src="../assets/team2.jpg" alt="oussama" style="width:350px; height:350px;">
-                <div class="container">
-                  <h2>Oussama Boussetta</h2>
-                  <p class="title">Frontend Developper</p>
-                  <p>IT student at ISETB</p>
-                  <p>oussmabensethom18&#64;gmail.com</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
+          <h3>Frontend</h3>
+          <p>Angular Framework</p>
+          <div class="skill-level">
+            <div class="level"></div>
           </div>
         </div>
-        <br><br><br><br><br>
-        </section>
-  </body>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-java fa-3x text-danger"></i>
+          </div>
+          <h3>Backend</h3>
+          <p>Java & Spring Boot</p>
+          <div class="skill-level">
+            <div class="level"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database fa-3x text-danger"></i>
+          </div>
+          <h3>Database</h3>
+          <p>MySQL</p>
+          <div class="skill-level">
+            <div class="level"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>

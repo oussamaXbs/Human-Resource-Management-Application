@@ -1,189 +1,115 @@
-
+/* Box-sizing for layout consistency */
 * {
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-   
-}
-#p1{
-    font-size: 3.1rem;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#p2{
-    font-size: 2.5rem;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
 }
 
-.navigation{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.carousel-caption{
-    font-size: 2.9rem;
-    height: 29rem;
-} 
-
-.divMain{
-    display: flex;
-   
-    background-color: black;
-    color: white;
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
 }
 
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
 
+.carousel-caption p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
 
+/* Skills Section */
+.skills-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
 
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
 
-section {
-    position: relative;
+.center-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 3 equal columns */
+  gap: 2rem;
+  justify-items: center; /* Centers the content inside each card */
+  padding: 0;
+}
+
+/* Skill Card Styling */
+.skill-card {
+  width: 100%; /* Ensures all cards are the same width */
+  max-width: 320px; /* Sets a maximum width for the cards */
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Hover effect to raise the cards */
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+/* Styling for the icons inside each card */
+.skill-icon i {
+  margin-bottom: 1.5rem;
+  color: #2980b9 !important;
+}
+
+.skill-card h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.skill-card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.5; /* Improve text readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Stack the cards on smaller screens */
+  }
+
+  .skill-card {
     width: 100%;
-    
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    max-width: 350px; /* Slightly smaller max-width on smaller screens */
+  }
 }
-
-
-.section-2  {
-   background-color: white;
-    height: -20rem;
-    
-}
-.section-2 .fit-image{
-   
-   height: 40rem;
- 
-}
-
-
-
- .text{
-    justify-content: center;
-    align-items: center;
-    margin-top: 2.5rem;
-    margin-left: 2rem;
-}
-
-.text #t1{
-   
-    margin-left: 7rem;
-    font-size: 1.5rem;
- 
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 1rem 3rem;
-    padding: 0;
-  }
-
-  li {
-    font-size: 1.5rem;
-    margin-bottom: 0.2rem;
-  }
-
-  ul.category {
-    margin-left: 0;
-  }
-
-  ul.category li {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 0.2rem;
-  }
-
-  ul.subcategory {
-    list-style-type: disc;
-    margin-left: 2rem;
-  }
-
-  ul.subcategory li {
-    font-weight: normal;
-    font-size: 1.3rem;
-  }
-
-
-
-.about{
-    background-color: white;
-}
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 0 0 auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-}
-
-  
-  .card {
-    box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 350px;
-    text-align: center;
-}
-  
-  .about-section {
-    padding: 50px;
-    text-align: center;
-    background-color:black;
-    color: white;
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-}
-  
-  .button:hover {
-    background-color: #555;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }

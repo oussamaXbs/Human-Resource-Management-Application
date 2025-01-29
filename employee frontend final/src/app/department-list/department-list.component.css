@@ -1,8 +1,44 @@
+/* Box shadow and margin for buttons */
 .btn {
-    margin-right: 10px;
-  }
-  
-  table {
-    width: 100%;
-    margin-top: 20px;
-  }
+  margin-right: 10px;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.search{
+  margin-top: 48px;
+}
+/* Consistent table styling */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* Styling the search input */
+input {
+  border: 1px solid #000000;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the search button */
+button[type="submit"] {
+  background-color: #6c757d; /* Grey color for button */
+  color: white;
+  border: none;
+  box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+button[type="submit"]:hover {
+  background-color: #5a6268;
+}
+
+/* Aligning buttons correctly */
+.inline {
+  display: flex;
+}
+
+/* Margin and alignment adjustments for the buttons */
+.inline .btn {
+  margin-left: 1rem;
+}

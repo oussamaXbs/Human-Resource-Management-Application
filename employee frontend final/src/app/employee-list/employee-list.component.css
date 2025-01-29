@@ -1,19 +1,64 @@
-.btn{
-    margin-right: 20px;
-    box-shadow: 10 4px 8px rgba(0, 0, 0, 0.1);
-
+/* Box shadow and margin for buttons */
+.btn {
+    margin-right: 10px;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.inline{
+/* Consistent table styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* Table header with dark background */
+thead.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Styling table rows */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Padding for table headers */
+th {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Padding for table cells */
+td {
+    padding: 8px;
+}
+
+/* Styling the search input */
+input {
+    border: 1px solid #000000;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the search button */
+button[type="submit"] {
+    background-color: #6c757d; /* Grey color for button */
+    color: white;
+    border: none;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+button[type="submit"]:hover {
+    background-color: #5a6268;
+}
+
+/* Aligning buttons correctly */
+.inline {
     display: flex;
 }
 
-
-.inline .btn{
+/* Margin and alignment adjustments for the buttons */
+.inline .btn {
     margin-left: 1rem;
-}
-
-input{
-    border: 1px solid #000000;
-    box-shadow: 10 4px 8px rgba(0, 0, 0, 0.1);
 }

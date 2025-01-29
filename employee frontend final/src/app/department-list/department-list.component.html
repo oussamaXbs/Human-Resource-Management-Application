@@ -1,26 +1,38 @@
 <div class="container">
-    <h2>Department List</h2>
-    <button class="btn btn-primary" (click)="addDepartment()">Add Department</button>
-    <br><br>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Employees Count</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let department of departments">
-          <td>{{ department.id }}</td>
-          <td>{{ department.name }}</td>
-          <td>{{ department.employeesCount }}</td>
-          <td>
-            <button class="btn btn-warning btn-sm" (click)="editDepartment(department.id)">Edit</button>
-            <button class="btn btn-danger btn-sm" (click)="deleteDepartment(department.id)" style="margin-left: 10px;">Delete</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="search">
+      <form class="search">
+          <div class="form-group col-md-6 inline">
+              <input type="text" class="form-control" id="id" name="id" placeholder="Search by ID">
+              <button class="btn btn-secondary" type="submit">Search</button>
+          </div>
+      </form>
   </div>
+  <br><br>
+
+  <!-- Table -->
+  <div>
+      <table class="table table-responsive table-striped border-dark" style="margin-bottom: 50px;">
+          <thead class="table-dark">
+              <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Employees Count</th>
+                  <th>Actions</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <tr *ngFor="let department of departments">
+                  <td>{{ department.id }}</td>
+                  <td>{{ department.name }}</td>
+                  <td>{{ department.employeesCount }}</td>
+                  <td>
+                      <!-- Updated button class for grey color -->
+                      <button (click)="editDepartment(department.id)" class="btn btn-secondary btn-sm">Update</button>
+                      <button (click)="deleteDepartment(department.id)" class="btn btn-danger btn-sm" style="margin-left: 10px;">Delete</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

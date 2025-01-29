@@ -20,7 +20,13 @@ form {
 button{
     box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+button[type="submit"] {
+    background-color: #0d6efd; /* Blue color similar to navbar */
+    color: white;
+    border: none;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
 .form-container {
     border: 1px solid #000000; 
     padding: 20px;
